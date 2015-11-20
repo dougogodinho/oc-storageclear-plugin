@@ -47,7 +47,7 @@ class StorageClear extends Command
         // deletar registros que não tem arquivos
         $this->info('Buscando registros sem Arquivos ou sem Model relacionado...');
 
-        $allFiles = File::all(['id', 'disk_name', 'attachment_type', 'attachment_id']);
+        $allFiles = File::all(['id', 'disk_name', 'attachment_type', 'attachment_id', 'is_public']);
         $count = 0;
         $total = $allFiles->count();
         foreach ($allFiles as $file) {
