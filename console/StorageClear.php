@@ -28,7 +28,7 @@ class StorageClear extends Command
         $this->info('--');
 
         // deletar arquivos que não tem registro
-        $this->info('Buscando Arquivos não registrados...');
+        $this->info('Seeking unregistered Files...');
 
         $allFiles = Storage::allFiles('uploads');
         $count = 0;
@@ -40,12 +40,12 @@ class StorageClear extends Command
                 $count++;
             }
         }
-        $this->info('... ' . $count . ' arquivos removidos de ' . $total . ' encontrados!');
+        $this->info("... $count files removed $total found!");
 
 
 
         // deletar registros que não tem arquivos
-        $this->info('Buscando registros sem Arquivos ou sem Model relacionado...');
+        $this->info('Seeking registers without Files or without related Model...');
 
         $allFiles = File::all(['id', 'disk_name', 'attachment_type', 'attachment_id', 'is_public']);
         $count = 0;
@@ -66,11 +66,11 @@ class StorageClear extends Command
             }
 
         }
-        $this->info('... ' . $count . ' registros removidos de ' . $total . ' encontrados!');
+        $this->info("... $count registers removed $total found!");
 
 
         // deletar pastas vazias
-        $this->info('Buscando pastas vazias...');
+        $this->info('Seeking empty directories...');
 
         $allFolders = array_reverse(Storage::allDirectories('uploads'));
         $count = 0;
@@ -82,7 +82,7 @@ class StorageClear extends Command
                 $count++;
             }
         }
-        $this->info('... ' . $count . ' pastas vazias removidas de ' . $total . ' encontradas!');
+        $this->info("... $count empty directories removed $total found!");
 
         // fim
         $this->info('--');
