@@ -8,7 +8,8 @@
 ## Description
 
 Scan the Uploads folder searching disconnected files with the database.
-Heads up! This script will delete files from your disk and data in your database.
+
+> Heads up! This script will delete files from your disk and data in your database.
 
 <a name="usage"></a>
 ## Usage
