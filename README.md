@@ -30,7 +30,9 @@ Is it! Be happy!
 ## To do
 
 - Ask for user confirmation before deletes
-- Interface to clear storage from backend
+- List files who will be deleted
+- User can select what will be deleted
+- Interface to storage clear from backend
 
 
 
