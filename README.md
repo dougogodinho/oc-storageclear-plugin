@@ -28,9 +28,8 @@ Is it! Be happy!
 <a name="todo"></a>
 ## To do
 
-- Translate messages
 - Ask for user confirmation before deletes
-- Improve documentation
+- Interface to clear storage from backend
 
 
 
