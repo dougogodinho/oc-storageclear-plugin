@@ -1,0 +1,6 @@
+plugin:
+    name: 'genius.storageclear::lang.plugin.name'
+    description: 'genius.storageclear::lang.plugin.description'
+    author: Genius
+    icon: oc-icon-recycle
+    homepage: ''
