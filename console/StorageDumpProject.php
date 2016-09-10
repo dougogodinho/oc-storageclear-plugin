@@ -32,7 +32,7 @@ class StorageDumpProject extends Command
 
         $file = base_path('__dump-' . date('Y-m-d-H-i-s') . '.zip');
 
-        shell_exec("zip -rq '$file' . -x '*.DS_Store' -x '__*' -x '.idea'");
+        shell_exec("zip -rq '$file' . -x '*.DS_Store' -x '__*' -x '.idea' -x '.idea/*' -x '.env'");
 
         $this->info(trans('genius.storageclear::lang.project.end', compact('file')));
     }
