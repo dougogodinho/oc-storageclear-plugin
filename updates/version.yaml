@@ -2,3 +2,4 @@
 1.1.0:
   - Translations for all commands feedbacks
   - 'New commands available: php artisan storage:dump, dump-project abd dump-database'
+1.1.1: Removed .idea and .env from project dump
